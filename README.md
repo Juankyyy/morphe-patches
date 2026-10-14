@@ -1,16 +1,17 @@
-# 👋🧩 Morphe Patches template
+# 💫 Juanky's Morphe Patches
 
-Template repository for Morphe Patches.
+Here are some patches for apps that I like
 
-## ❓ About
-
-Patches for apps I like.
-
-<!-- TODO: Update this about section with a brief introduction/summary about this repo and what it offers. -->
 
 ### How to use these patches
 
-Click here to add these patches to Morphe: https://morphe.software/add-source?github=xyz-user/xyz-patches
+You need to have [Morphe](https://morphe.software/) and click the button below 👀
+
+<p>
+  <a href="https://morphe.software/add-source?github=Juankyyy/morphe-patches">
+    <img src="https://img.shields.io/badge/%E2%9E%95%20%20Add%20to%20Morphe-00fff8?style=for-the-badge" alt="Add to Morphe">
+  </a>
+</p>
 
 ## 🩹 Patches list
 
@@ -88,4 +89,4 @@ See the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation
 
 ## 📜 License
 
-UserXYZ Patches are licensed under the [GNU General Public License v3.0](LICENSE)
+Juanky's Patches are licensed under the [GNU General Public License v3.0](LICENSE)
