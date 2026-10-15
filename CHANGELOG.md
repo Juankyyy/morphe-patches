@@ -1,3 +1,9 @@
+## [1.1.0-dev.4](https://github.com/Juankyyy/morphe-patches/compare/v1.1.0-dev.3...v1.1.0-dev.4) (2026-10-15)
+
+### ✨ New Features
+
+* WaterMinder update check off by default ([d1b136d](https://github.com/Juankyyy/morphe-patches/commit/d1b136d500b4459bfad52dd7ea1aac08778e2185))
+
 ## [1.1.0-dev.3](https://github.com/Juankyyy/morphe-patches/compare/v1.1.0-dev.2...v1.1.0-dev.3) (2026-10-15)
 
 ### 🐛 Bug Fixes

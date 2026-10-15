@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.1.0-dev.3",
+  "version": "1.1.0-dev.4",
   "patches": [
     {
       "name": "Remove license check",
@@ -57,6 +57,32 @@
     {
       "name": "Unlock Premium",
       "description": "Unlocks all Premium features.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.funnmedia.waterminder",
+          "name": "WaterMinder",
+          "description": null,
+          "apkFileType": "XAPK",
+          "appIconColor": null,
+          "signatures": null,
+          "targets": [
+            {
+              "version": "5.10.10",
+              "versionCodes": null,
+              "isExperimental": true,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Update check off by default",
+      "description": "Disables automatic update checks by default. Can still be enabled in Settings.",
       "default": true,
       "category": null,
       "compatiblePackages": [

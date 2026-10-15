@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-10-15T04:24:05",
-  "description": "## [1.1.0-dev.3](https://github.com/Juankyyy/morphe-patches/compare/v1.1.0-dev.2...v1.1.0-dev.3) (2026-10-15)\n\n### 🐛 Bug Fixes\n\n* WaterMinder force purchase state to purchased ([dbe7cd1](https://github.com/Juankyyy/morphe-patches/commit/dbe7cd18cdb363366c708ae79c6ad8384a6b0d37))",
-  "download_url": "https://github.com/Juankyyy/morphe-patches/releases/download/v1.1.0-dev.3/patches-1.1.0-dev.3.mpp",
+  "created_at": "2026-10-15T04:56:50",
+  "description": "## [1.1.0-dev.4](https://github.com/Juankyyy/morphe-patches/compare/v1.1.0-dev.3...v1.1.0-dev.4) (2026-10-15)\n\n### ✨ New Features\n\n* WaterMinder update check off by default ([d1b136d](https://github.com/Juankyyy/morphe-patches/commit/d1b136d500b4459bfad52dd7ea1aac08778e2185))",
+  "download_url": "https://github.com/Juankyyy/morphe-patches/releases/download/v1.1.0-dev.4/patches-1.1.0-dev.4.mpp",
   "signature_download_url": "",
-  "version": "1.1.0-dev.3"
+  "version": "1.1.0-dev.4"
 }
