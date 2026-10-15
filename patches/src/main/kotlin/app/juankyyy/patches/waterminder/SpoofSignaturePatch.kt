@@ -36,7 +36,7 @@ private fun MutableMethod.returnConstString(value: String) {
 @Suppress("unused")
 val spoofSignaturePatch = bytecodePatch(
     name = "Spoof signature",
-    description = "Reports the original signing certificate to Google/Firebase so Google sign-in (data sync) keeps working on the re-signed app.",
+    description = "Reports the original signing certificate to Google/Firebase SDK checks inside the app. Does not fix Google sign-in: that verification happens on Google's servers, which see the re-signed certificate.",
     default = false
 ) {
     compatibleWith(COMPATIBILITY_WATERMINDER_EXPERIMENTAL)
