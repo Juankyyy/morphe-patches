@@ -29,7 +29,7 @@ You need to have [Morphe](https://morphe.software/) and click the button below �
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Remove license check](#remove-license-check) | Skips the Play license check so the app starts on installs outside Google Play. |  |
-| [Spoof signature](#spoof-signature) | Reports the original signing certificate to Google/Firebase so Google sign-in (data sync) keeps working on the re-signed app. |  |
+| [Spoof signature](#spoof-signature) | Reports the original signing certificate to Google/Firebase SDK checks inside the app. Does not fix Google sign-in: that verification happens on Google's servers, which see the re-signed certificate. |  |
 | [Unlock Premium](#unlock-premium) | Unlocks all Premium features. |  |
 | [Update check off by default](#update-check-off-by-default) | Disables automatic update checks by default. Keep it off and update only via Morphe. |  |
 
