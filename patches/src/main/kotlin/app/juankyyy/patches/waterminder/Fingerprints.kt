@@ -111,3 +111,42 @@ object PurchaseStateFingerprint : Fingerprint(
         opcode(Opcode.PACKED_SWITCH)
     )
 )
+
+/**
+ * Toggle "Comprobación automática de actualizaciones" (Lrk.<init>):
+ * inicializa su estado con getBoolean(key, true). Cambiamos el default a false.
+ */
+object UpdateCheckToggleFingerprint : Fingerprint(
+    definingClass = "Lrk;",
+    name = "<init>",
+    returnType = "V",
+    parameters = listOf(),
+    filters = listOf(
+        opcode(Opcode.CONST_STRING),
+        opcode(Opcode.INVOKE_INTERFACE)
+    )
+)
+
+/** MainActivity.onCreate: lee el ajuste para decidir si busca actualizaciones. */
+object UpdateCheckOnCreateFingerprint : Fingerprint(
+    definingClass = "Lcom/funnmedia/waterminder/screen/activity/MainActivity;",
+    name = "onCreate",
+    returnType = "V",
+    parameters = listOf("Landroid/os/Bundle;"),
+    filters = listOf(
+        opcode(Opcode.CONST_STRING),
+        opcode(Opcode.INVOKE_STATIC)
+    )
+)
+
+/** MainActivity.onResume: re-chequea el ajuste al volver a la app. */
+object UpdateCheckOnResumeFingerprint : Fingerprint(
+    definingClass = "Lcom/funnmedia/waterminder/screen/activity/MainActivity;",
+    name = "onResume",
+    returnType = "V",
+    parameters = listOf(),
+    filters = listOf(
+        opcode(Opcode.CONST_STRING),
+        opcode(Opcode.INVOKE_STATIC)
+    )
+)
