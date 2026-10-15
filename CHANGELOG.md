@@ -1,3 +1,9 @@
+## [1.1.0-dev.1](https://github.com/Juankyyy/morphe-patches/compare/v1.0.0...v1.1.0-dev.1) (2026-10-15)
+
+### ✨ New Features
+
+* WaterMinder unlock Premium (experimental) ([1cdf7da](https://github.com/Juankyyy/morphe-patches/commit/1cdf7dae3f408299781d2a341a5620630e595c9e))
+
 ## 1.0.0 (2026-10-15)
 
 ### ✨ New Features
