@@ -16,9 +16,9 @@ You need to have [Morphe](https://morphe.software/) and click the button below �
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.2.0-dev.1](https://github.com/Juankyyy/morphe-patches/releases/tag/v1.2.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;5 patches total
+> **[v1.2.0-dev.1](https://github.com/Juankyyy/morphe-patches/releases/tag/v1.2.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
 <details open>
-<summary>📦 WaterMinder&nbsp;&nbsp;•&nbsp;&nbsp;4 patches</summary>
+<summary>📦 WaterMinder&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
 <br>
 
 **🎯 Supported versions:**
@@ -29,7 +29,6 @@ You need to have [Morphe](https://morphe.software/) and click the button below �
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Remove license check](#remove-license-check) | Skips the Play license check so the app starts on installs outside Google Play. |  |
-| [Spoof signature](#spoof-signature) | Reports the original signing certificate to Google/Firebase SDK checks inside the app. Does not fix Google sign-in: that verification happens on Google's servers, which see the re-signed certificate. |  |
 | [Unlock Premium](#unlock-premium) | Unlocks all Premium features. |  |
 | [Update check off by default](#update-check-off-by-default) | Disables automatic update checks by default. Keep it off and update only via Morphe. |  |
 

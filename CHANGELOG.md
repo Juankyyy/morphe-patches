@@ -3,6 +3,17 @@
 ### 🐛 Bug Fixes
 
 * correct Spoof signature scope for WaterMinder ([a2f14c5](https://github.com/Juankyyy/morphe-patches/commit/a2f14c519224f543d39b64a09ee3dc9cc7d59d81))
+* remove WaterMinder spoof signature patch ([2600c5b](https://github.com/Juankyyy/morphe-patches/commit/2600c5b5b77626f24bea14511bf1ccbad05f55eb))
+
+### ✨ New Features
+
+* WaterMinder spoof signature for Google sign-in (experimental) ([ae1245e](https://github.com/Juankyyy/morphe-patches/commit/ae1245e4295fe4c40f2a8d88cf2f05992d9fa928))
+
+## [1.2.0-dev.1](https://github.com/Juankyyy/morphe-patches/compare/v1.1.0...v1.2.0-dev.1) (2026-10-15)
+
+### 🐛 Bug Fixes
+
+* correct Spoof signature scope for WaterMinder ([a2f14c5](https://github.com/Juankyyy/morphe-patches/commit/a2f14c519224f543d39b64a09ee3dc9cc7d59d81))
 
 ### ✨ New Features
 
