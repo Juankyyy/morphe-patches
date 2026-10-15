@@ -16,7 +16,23 @@ You need to have [Morphe](https://morphe.software/) and click the button below �
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.1.0-dev.1](https://github.com/Juankyyy/morphe-patches/releases/tag/v1.1.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
+> **[v1.1.0-dev.2](https://github.com/Juankyyy/morphe-patches/releases/tag/v1.1.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;3 patches total
+<details open>
+<summary>📦 WaterMinder&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 🧪&nbsp;5.10.10 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Remove license check](#remove-license-check) | Skips the Play license check so the app starts on installs outside Google Play. |  |
+| [Unlock Premium](#unlock-premium) | Unlocks all Premium features. |  |
+
+</details>
+
 <details open>
 <summary>📦 Remote Mouse&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
 <br>
@@ -29,21 +45,6 @@ You need to have [Morphe](https://morphe.software/) and click the button below �
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Unlock PRO](#unlock-pro) | Unlocks all PRO features. |  |
-
-</details>
-
-<details open>
-<summary>📦 WaterMinder&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
-<br>
-
-**🎯 Supported versions:**
-
-| 🧪&nbsp;5.10.10 |
-| :---: |
-
-| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
-|----------|----------------|-----------|
-| [Unlock Premium](#unlock-premium) | Unlocks all Premium features. |  |
 
 </details>
 
