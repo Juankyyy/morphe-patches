@@ -1,3 +1,9 @@
+## [1.1.0-dev.3](https://github.com/Juankyyy/morphe-patches/compare/v1.1.0-dev.2...v1.1.0-dev.3) (2026-10-15)
+
+### 🐛 Bug Fixes
+
+* WaterMinder force purchase state to purchased ([dbe7cd1](https://github.com/Juankyyy/morphe-patches/commit/dbe7cd18cdb363366c708ae79c6ad8384a6b0d37))
+
 ## [1.1.0-dev.2](https://github.com/Juankyyy/morphe-patches/compare/v1.1.0-dev.1...v1.1.0-dev.2) (2026-10-15)
 
 ### ✨ New Features
