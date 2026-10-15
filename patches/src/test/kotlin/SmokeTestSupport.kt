@@ -143,16 +143,6 @@ fun assertStartsWithReturnVoid(method: Method, label: String) {
         "$label must start with return-void; got ${method.instructions().firstOrNull()?.opcode}"
     )
 }
-
-/** Asserts the method starts with `const-string` of [expected]. */
-fun assertStartsWithConstString(method: Method, expected: String, label: String) {
-    val first = method.instructions().getOrNull(0) as? ReferenceInstruction
-    val ref = first?.reference as? com.android.tools.smali.dexlib2.iface.reference.StringReference
-    assertTrue(
-        first != null && first.opcode == Opcode.CONST_STRING && ref?.string == expected,
-        "$label must start with const-string \"$expected\"; got ${first?.opcode} $ref"
-    )
-}
 /** Asserts the method starts with `const/4 vX, 0/1` (forced boolean). */
 fun assertStartsWithConstBoolean(method: Method, expected: Boolean, label: String) {
     val first = method.instructions().getOrNull(0)
