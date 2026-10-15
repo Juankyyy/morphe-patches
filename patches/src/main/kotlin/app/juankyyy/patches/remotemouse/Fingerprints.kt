@@ -98,3 +98,41 @@ object AdControllerOnCreateAddFingerprint : Fingerprint(
         opcode(Opcode.RETURN_VOID)
     )
 )
+
+/**
+ * Popups de Remote Mouse 5.315 (confirmado en el APK).
+ *
+ * - WhatsNewDialog.shouldShow()Z: gate que decide si se muestra el diálogo
+ *   de novedades. Forzarlo a false lo elimina.
+ * - RateDialog.show(...): muestra el diálogo de "califícanos". No-op.
+ * - AutoUpdater.checkUpdate(String): chequeo de updates al abrir la app. No-op.
+ */
+object WhatsNewShouldShowFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/dailog/WhatsNewDialog;",
+    name = "shouldShow",
+    returnType = "Z",
+    parameters = listOf(),
+    filters = listOf(
+        opcode(Opcode.RETURN)
+    )
+)
+
+object RateDialogShowFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/dailog/RateDialog;",
+    name = "show",
+    returnType = "V",
+    parameters = listOf("Landroidx/fragment/app/FragmentTransaction;", "Ljava/lang/String;", "Z"),
+    filters = listOf(
+        opcode(Opcode.RETURN_VOID)
+    )
+)
+
+object AutoUpdaterCheckUpdateFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/network/AutoUpdater;",
+    name = "checkUpdate",
+    returnType = "V",
+    parameters = listOf("Ljava/lang/String;"),
+    filters = listOf(
+        opcode(Opcode.RETURN_VOID)
+    )
+)
