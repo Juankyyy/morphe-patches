@@ -1,3 +1,10 @@
+## [1.2.0-dev.3](https://github.com/Juankyyy/morphe-patches/compare/v1.2.0-dev.2...v1.2.0-dev.3) (2026-10-15)
+
+### 🐛 Bug Fixes
+
+* Remote Mouse disable popups ([59a2801](https://github.com/Juankyyy/morphe-patches/commit/59a2801fcdbd520fb5feb764e3ce8c2d5f975d58))
+* Remote Mouse remove ads ([377eefc](https://github.com/Juankyyy/morphe-patches/commit/377eefc7e0ae4f6ac59d7edd8ba87c5c894675a0))
+
 ## [1.2.0-dev.2](https://github.com/Juankyyy/morphe-patches/compare/v1.2.0-dev.1...v1.2.0-dev.2) (2026-10-15)
 
 ### 🐛 Bug Fixes

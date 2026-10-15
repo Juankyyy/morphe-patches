@@ -1,7 +1,59 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.2.0-dev.2",
+  "version": "1.2.0-dev.3",
   "patches": [
+    {
+      "name": "Disable popups",
+      "description": "Disables rate dialog, what's new dialog and auto update checks.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.hungrybolo.remotemouseandroid",
+          "name": "Remote Mouse",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#2196F3",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "5.315",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove ads",
+      "description": "Disables banner and interstitial AdMob ads.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.hungrybolo.remotemouseandroid",
+          "name": "Remote Mouse",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#2196F3",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "5.315",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
     {
       "name": "Remove license check",
       "description": "Skips the Play license check so the app starts on installs outside Google Play.",
