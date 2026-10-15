@@ -12,9 +12,7 @@ val COMPATIBILITY_WATERMINDER = Compatibility(
     apkFileType = ApkFileType.XAPK,
     targets = listOf(
         AppTarget(
-            version = "5.10.10",
-            // En pruebas: sale desactivado por defecto hasta verificarlo en el teléfono.
-            isExperimental = true
+            version = "5.10.10"
         )
     )
 )

@@ -54,7 +54,7 @@ private fun MutableMethod.zeroLfy1Default(restore: Boolean) {
 @Suppress("unused")
 val updateCheckOffByDefaultPatch = bytecodePatch(
     name = "Update check off by default",
-    description = "Disables automatic update checks by default. Can still be enabled in Settings.",
+    description = "Disables automatic update checks by default. Keep it off and update only via Morphe.",
     default = true
 ) {
     compatibleWith(COMPATIBILITY_WATERMINDER)
