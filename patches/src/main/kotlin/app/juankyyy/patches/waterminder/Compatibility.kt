@@ -16,3 +16,16 @@ val COMPATIBILITY_WATERMINDER = Compatibility(
         )
     )
 )
+
+/** Compatibilidad experimental para parches en pruebas (desactivados por defecto). */
+val COMPATIBILITY_WATERMINDER_EXPERIMENTAL = Compatibility(
+    name = "WaterMinder",
+    packageName = "com.funnmedia.waterminder",
+    apkFileType = ApkFileType.XAPK,
+    targets = listOf(
+        AppTarget(
+            version = "5.10.10",
+            isExperimental = true
+        )
+    )
+)
