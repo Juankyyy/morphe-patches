@@ -41,3 +41,98 @@ object EntitlementsRecomputeFingerprint : Fingerprint(
         opcode(Opcode.SPUT_BOOLEAN)
     )
 )
+
+/**
+ * Ads de Remote Mouse 5.315 (confirmado en el APK).
+ *
+ * Paquete functions/ads/: AdController delega en GoogleAd (AdMob).
+ * Hacer no-op los métodos de carga/muestra elimina banners e
+ * intersticiales aunque cambie la lógica de Entitlements.recompute().
+ */
+object GoogleAdLoadFullAdFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/functions/ads/GoogleAd;",
+    name = "loadFullAd",
+    returnType = "V",
+    parameters = listOf(),
+    filters = listOf(
+        opcode(Opcode.RETURN_VOID)
+    )
+)
+
+object GoogleAdDisplayInterstitialFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/functions/ads/GoogleAd;",
+    name = "displayInterstitial",
+    returnType = "V",
+    parameters = listOf(),
+    filters = listOf(
+        opcode(Opcode.RETURN_VOID)
+    )
+)
+
+object GoogleAdOnCreateAddFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/functions/ads/GoogleAd;",
+    name = "onCreateAdd",
+    returnType = "V",
+    parameters = listOf("Landroid/content/Context;", "Landroid/view/ViewGroup;"),
+    filters = listOf(
+        opcode(Opcode.RETURN_VOID)
+    )
+)
+
+object AdControllerLoadFullAdFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/functions/ads/AdController;",
+    name = "loadFullAd",
+    returnType = "V",
+    parameters = listOf(),
+    filters = listOf(
+        opcode(Opcode.RETURN_VOID)
+    )
+)
+
+object AdControllerOnCreateAddFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/functions/ads/AdController;",
+    name = "onCreateAdd",
+    returnType = "V",
+    parameters = listOf("Landroid/content/Context;", "Landroid/view/ViewGroup;"),
+    filters = listOf(
+        opcode(Opcode.RETURN_VOID)
+    )
+)
+
+/**
+ * Popups de Remote Mouse 5.315 (confirmado en el APK).
+ *
+ * - WhatsNewDialog.shouldShow()Z: gate que decide si se muestra el diálogo
+ *   de novedades. Forzarlo a false lo elimina.
+ * - RateDialog.show(...): muestra el diálogo de "califícanos". No-op.
+ * - AutoUpdater.checkUpdate(String): chequeo de updates al abrir la app. No-op.
+ */
+object WhatsNewShouldShowFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/dailog/WhatsNewDialog;",
+    name = "shouldShow",
+    returnType = "Z",
+    parameters = listOf(),
+    filters = listOf(
+        opcode(Opcode.RETURN)
+    )
+)
+
+object RateDialogShowFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/dailog/RateDialog;",
+    name = "show",
+    returnType = "V",
+    parameters = listOf("Landroidx/fragment/app/FragmentTransaction;", "Ljava/lang/String;", "Z"),
+    filters = listOf(
+        opcode(Opcode.RETURN_VOID)
+    )
+)
+
+object AutoUpdaterCheckUpdateFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/network/AutoUpdater;",
+    name = "checkUpdate",
+    returnType = "V",
+    parameters = listOf("Ljava/lang/String;"),
+    filters = listOf(
+        opcode(Opcode.RETURN_VOID)
+    )
+)

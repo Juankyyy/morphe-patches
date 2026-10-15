@@ -16,7 +16,24 @@ You need to have [Morphe](https://morphe.software/) and click the button below �
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.1.0](https://github.com/Juankyyy/morphe-patches/releases/tag/v1.1.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
+> **[v1.2.0-dev.3](https://github.com/Juankyyy/morphe-patches/releases/tag/v1.2.0-dev.3)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;6 patches total
+<details open>
+<summary>📦 Remote Mouse&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 5.315 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Disable popups](#disable-popups) | Disables rate dialog, what's new dialog and auto update checks. |  |
+| [Remove ads](#remove-ads) | Disables banner and interstitial AdMob ads. |  |
+| [Unlock PRO](#unlock-pro) | Unlocks all PRO features. |  |
+
+</details>
+
 <details open>
 <summary>📦 WaterMinder&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
 <br>
@@ -31,21 +48,6 @@ You need to have [Morphe](https://morphe.software/) and click the button below �
 | [Remove license check](#remove-license-check) | Skips the Play license check so the app starts on installs outside Google Play. |  |
 | [Unlock Premium](#unlock-premium) | Unlocks all Premium features. |  |
 | [Update check off by default](#update-check-off-by-default) | Disables automatic update checks by default. Keep it off and update only via Morphe. |  |
-
-</details>
-
-<details open>
-<summary>📦 Remote Mouse&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
-<br>
-
-**🎯 Supported versions:**
-
-| 5.315 |
-| :---: |
-
-| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
-|----------|----------------|-----------|
-| [Unlock PRO](#unlock-pro) | Unlocks all PRO features. |  |
 
 </details>
 
