@@ -1,3 +1,17 @@
+## [1.2.0](https://github.com/Juankyyy/morphe-patches/compare/v1.1.0...v1.2.0) (2026-10-15)
+
+### 🐛 Bug Fixes
+
+* correct Spoof signature scope for WaterMinder ([a2f14c5](https://github.com/Juankyyy/morphe-patches/commit/a2f14c519224f543d39b64a09ee3dc9cc7d59d81))
+* Remote Mouse disable popups ([59a2801](https://github.com/Juankyyy/morphe-patches/commit/59a2801fcdbd520fb5feb764e3ce8c2d5f975d58))
+* Remote Mouse remove ads ([377eefc](https://github.com/Juankyyy/morphe-patches/commit/377eefc7e0ae4f6ac59d7edd8ba87c5c894675a0))
+* remove WaterMinder spoof signature patch ([2600c5b](https://github.com/Juankyyy/morphe-patches/commit/2600c5b5b77626f24bea14511bf1ccbad05f55eb))
+* trigger dev.2 publish with repaired release notes ([b7dfe2f](https://github.com/Juankyyy/morphe-patches/commit/b7dfe2f60ccb0ce58c6fe2a88942039734a4441e))
+
+### ✨ New Features
+
+* WaterMinder spoof signature for Google sign-in (experimental) ([ae1245e](https://github.com/Juankyyy/morphe-patches/commit/ae1245e4295fe4c40f2a8d88cf2f05992d9fa928))
+
 ## [1.2.0-dev.3](https://github.com/Juankyyy/morphe-patches/compare/v1.2.0-dev.2...v1.2.0-dev.3) (2026-10-15)
 
 ### 🐛 Bug Fixes
