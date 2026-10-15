@@ -20,6 +20,14 @@ val patchListGeneratorClasspath = configurations.create("patchListGeneratorClass
 dependencies {
     compileOnly(libs.gson)
     patchListGeneratorClasspath(libs.gson)
+
+    // Minimal smoke-test harness (see patches/src/test/kotlin/).
+    // Applies patches to a real APK from the gitignored apks/ dir and asserts
+    // on the emitted bytecode. Tests skip when the APK is absent, so CI stays green.
+    testImplementation(kotlin("test"))
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 tasks {
@@ -35,5 +43,11 @@ tasks {
     // Used by gradle-semantic-release-plugin.
     publish {
         dependsOn("generatePatchesList")
+    }
+
+    test {
+        useJUnitPlatform()
+        // Smoke tests load the full APK and parse every emitted dex in memory.
+        maxHeapSize = "2g"
     }
 }

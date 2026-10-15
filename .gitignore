@@ -113,8 +113,12 @@ gradle-app.setting
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 
-# Potentially copyrighted test APK
+# Potentially copyrighted test APKs (smoke tests read from the gitignored apks/ dir).
 *.apk
+*.apkm
+*.apks
+*.xapk
+apks/
 
 # Ignore vscode config
 .vscode/
