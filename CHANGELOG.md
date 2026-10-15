@@ -1,3 +1,11 @@
+## [1.2.0-dev.2](https://github.com/Juankyyy/morphe-patches/compare/v1.2.0-dev.1...v1.2.0-dev.2) (2026-10-15)
+
+### 🐛 Bug Fixes
+
+* correct Spoof signature scope for WaterMinder ([a2f14c5](https://github.com/Juankyyy/morphe-patches/commit/a2f14c519224f543d39b64a09ee3dc9cc7d59d81))
+* remove WaterMinder spoof signature patch ([2600c5b](https://github.com/Juankyyy/morphe-patches/commit/2600c5b5b77626f24bea14511bf1ccbad05f55eb))
+* trigger dev.2 publish with repaired release notes ([b7dfe2f](https://github.com/Juankyyy/morphe-patches/commit/b7dfe2f60ccb0ce58c6fe2a88942039734a4441e))
+
 ## [1.2.0-dev.1](https://github.com/Juankyyy/morphe-patches/compare/v1.1.0...v1.2.0-dev.1) (2026-10-15)
 
 ### 🐛 Bug Fixes
