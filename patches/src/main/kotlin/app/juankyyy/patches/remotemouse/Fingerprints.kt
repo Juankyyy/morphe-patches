@@ -41,3 +41,60 @@ object EntitlementsRecomputeFingerprint : Fingerprint(
         opcode(Opcode.SPUT_BOOLEAN)
     )
 )
+
+/**
+ * Ads de Remote Mouse 5.315 (confirmado en el APK).
+ *
+ * Paquete functions/ads/: AdController delega en GoogleAd (AdMob).
+ * Hacer no-op los métodos de carga/muestra elimina banners e
+ * intersticiales aunque cambie la lógica de Entitlements.recompute().
+ */
+object GoogleAdLoadFullAdFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/functions/ads/GoogleAd;",
+    name = "loadFullAd",
+    returnType = "V",
+    parameters = listOf(),
+    filters = listOf(
+        opcode(Opcode.RETURN_VOID)
+    )
+)
+
+object GoogleAdDisplayInterstitialFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/functions/ads/GoogleAd;",
+    name = "displayInterstitial",
+    returnType = "V",
+    parameters = listOf(),
+    filters = listOf(
+        opcode(Opcode.RETURN_VOID)
+    )
+)
+
+object GoogleAdOnCreateAddFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/functions/ads/GoogleAd;",
+    name = "onCreateAdd",
+    returnType = "V",
+    parameters = listOf("Landroid/content/Context;", "Landroid/view/ViewGroup;"),
+    filters = listOf(
+        opcode(Opcode.RETURN_VOID)
+    )
+)
+
+object AdControllerLoadFullAdFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/functions/ads/AdController;",
+    name = "loadFullAd",
+    returnType = "V",
+    parameters = listOf(),
+    filters = listOf(
+        opcode(Opcode.RETURN_VOID)
+    )
+)
+
+object AdControllerOnCreateAddFingerprint : Fingerprint(
+    definingClass = "Lcom/hungrybolo/remotemouseandroid/functions/ads/AdController;",
+    name = "onCreateAdd",
+    returnType = "V",
+    parameters = listOf("Landroid/content/Context;", "Landroid/view/ViewGroup;"),
+    filters = listOf(
+        opcode(Opcode.RETURN_VOID)
+    )
+)
