@@ -65,5 +65,12 @@ class WaterminderSmokeTest {
                 "$type.isPremiumFeature ($label)"
             )
         }
+
+        // 4. Purchase state -> purchased.
+        val purchaseState = byType["Lnu7;"] ?: error("Lnu7 not found")
+        assertStartsWithConstTrue(
+            purchaseState.method("a", listOf("Lyv7;")),
+            "Lnu7.a (purchase state)"
+        )
     }
 }

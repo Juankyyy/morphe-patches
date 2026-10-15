@@ -94,3 +94,20 @@ object PairipLicenseCheckFingerprint : Fingerprint(
         opcode(Opcode.RETURN_VOID)
     )
 )
+
+/**
+ * Gate central de compra: Lnu7.a() lee los flags locales is_app_purchased /
+ * isRevenueCatPurchased / isPromoCodeActive de SharedPreferences. Lo llaman
+ * 35+ sitios (MainActivity, ExportActivity, lanzadores del paywall...).
+ * Forzarlo a true marca la app como comprada en todas partes.
+ */
+object PurchaseStateFingerprint : Fingerprint(
+    definingClass = "Lnu7;",
+    name = "a",
+    returnType = "Z",
+    parameters = listOf("Lyv7;"),
+    filters = listOf(
+        opcode(Opcode.CONST_STRING),
+        opcode(Opcode.PACKED_SWITCH)
+    )
+)

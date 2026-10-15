@@ -52,5 +52,14 @@ val unlockPremiumPatch = bytecodePatch(
                 return v0
             """
         )
+
+        // 4. Estado de compra: siempre comprado (puerta central usada en 35+ sitios).
+        PurchaseStateFingerprint.method.addInstructions(
+            0,
+            """
+                const/4 v0, 0x1
+                return v0
+            """
+        )
     }
 }
