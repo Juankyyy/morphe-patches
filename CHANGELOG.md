@@ -1,3 +1,9 @@
+## [1.2.0-dev.1](https://github.com/Juankyyy/morphe-patches/compare/v1.1.0...v1.2.0-dev.1) (2026-10-15)
+
+### ✨ New Features
+
+* WaterMinder spoof signature for Google sign-in (experimental) ([ae1245e](https://github.com/Juankyyy/morphe-patches/commit/ae1245e4295fe4c40f2a8d88cf2f05992d9fa928))
+
 ## [1.1.0](https://github.com/Juankyyy/morphe-patches/compare/v1.0.0...v1.1.0) (2026-10-15)
 
 ### 🐛 Bug Fixes

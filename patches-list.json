@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.1.0",
+  "version": "1.2.0-dev.1",
   "patches": [
     {
       "name": "Remove license check",
@@ -20,6 +20,32 @@
               "version": "5.10.10",
               "versionCodes": null,
               "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Spoof signature",
+      "description": "Reports the original signing certificate to Google/Firebase so Google sign-in (data sync) keeps working on the re-signed app.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.funnmedia.waterminder",
+          "name": "WaterMinder",
+          "description": null,
+          "apkFileType": "XAPK",
+          "appIconColor": null,
+          "signatures": null,
+          "targets": [
+            {
+              "version": "5.10.10",
+              "versionCodes": null,
+              "isExperimental": true,
               "minSdk": null,
               "description": null
             }
