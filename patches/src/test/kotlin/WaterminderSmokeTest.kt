@@ -24,10 +24,18 @@ class WaterminderSmokeTest {
             apk = apk,
             workDir = workDir,
             pkg = PKG,
-            patchNames = setOf("Unlock Premium"),
+            patchNames = setOf("Unlock Premium", "Remove license check"),
             allPatches = loadAllPatches(bundle!!),
         )
         val byType = classes.associateBy { it.type }
+
+        // 0. PairIP license check -> skipped.
+        val licenseClient = byType["Lcom/pairip/licensecheck/LicenseClient;"]
+            ?: error("LicenseClient not found")
+        assertStartsWithReturnVoid(
+            licenseClient.method("checkLicense", listOf("Landroid/content/Context;")),
+            "LicenseClient.checkLicense"
+        )
 
         // 1. RevenueCat entitlement -> active.
         val entitlementInfo = byType["Lcom/revenuecat/purchases/EntitlementInfo;"]

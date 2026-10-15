@@ -136,6 +136,13 @@ fun assertStartsWithConstTrue(method: Method, label: String) =
 fun assertStartsWithConstFalse(method: Method, label: String) =
     assertStartsWithConstBoolean(method, expected = false, label = label)
 
+/** Asserts the method starts with `return-void`. */
+fun assertStartsWithReturnVoid(method: Method, label: String) {
+    assertTrue(
+        method.instructions().firstOrNull()?.opcode == Opcode.RETURN_VOID,
+        "$label must start with return-void; got ${method.instructions().firstOrNull()?.opcode}"
+    )
+}
 /** Asserts the method starts with `const/4 vX, 0/1` (forced boolean). */
 fun assertStartsWithConstBoolean(method: Method, expected: Boolean, label: String) {
     val first = method.instructions().getOrNull(0)

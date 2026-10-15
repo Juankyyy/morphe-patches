@@ -76,3 +76,21 @@ object SettingsMenuPremiumFingerprint : Fingerprint(
         opcode(Opcode.RETURN)
     )
 )
+
+/**
+ * PairIP: LicenseClient.checkLicense() es el punto único de entrada del
+ * check de licencia de Play. Lo llama Application.attachBaseContext y
+ * LicenseContentProvider.onCreate al arrancar. Anularlo (return-void)
+ * evita el check local de instalador, la conexión al servicio de
+ * licencias de Play, los reintentos y la pantalla de "Descarga esta app".
+ */
+object PairipLicenseCheckFingerprint : Fingerprint(
+    definingClass = "Lcom/pairip/licensecheck/LicenseClient;",
+    name = "checkLicense",
+    returnType = "V",
+    parameters = listOf("Landroid/content/Context;"),
+    filters = listOf(
+        opcode(Opcode.CONST_STRING),
+        opcode(Opcode.RETURN_VOID)
+    )
+)
