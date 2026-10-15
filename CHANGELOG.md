@@ -1,3 +1,9 @@
+## [1.1.0-dev.5](https://github.com/Juankyyy/morphe-patches/compare/v1.1.0-dev.4...v1.1.0-dev.5) (2026-10-15)
+
+### 🐛 Bug Fixes
+
+* WaterMinder stable-ready patch metadata ([0c4304a](https://github.com/Juankyyy/morphe-patches/commit/0c4304a9fe7174ae95c48efb4513233bc2d90449))
+
 ## [1.1.0-dev.4](https://github.com/Juankyyy/morphe-patches/compare/v1.1.0-dev.3...v1.1.0-dev.4) (2026-10-15)
 
 ### ✨ New Features

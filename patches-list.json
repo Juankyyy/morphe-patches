@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.1.0-dev.4",
+  "version": "1.1.0-dev.5",
   "patches": [
     {
       "name": "Remove license check",
@@ -19,7 +19,7 @@
             {
               "version": "5.10.10",
               "versionCodes": null,
-              "isExperimental": true,
+              "isExperimental": false,
               "minSdk": null,
               "description": null
             }
@@ -71,7 +71,7 @@
             {
               "version": "5.10.10",
               "versionCodes": null,
-              "isExperimental": true,
+              "isExperimental": false,
               "minSdk": null,
               "description": null
             }
@@ -82,7 +82,7 @@
     },
     {
       "name": "Update check off by default",
-      "description": "Disables automatic update checks by default. Can still be enabled in Settings.",
+      "description": "Disables automatic update checks by default. Keep it off and update only via Morphe.",
       "default": true,
       "category": null,
       "compatiblePackages": [
@@ -97,7 +97,7 @@
             {
               "version": "5.10.10",
               "versionCodes": null,
-              "isExperimental": true,
+              "isExperimental": false,
               "minSdk": null,
               "description": null
             }

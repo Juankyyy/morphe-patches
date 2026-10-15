@@ -16,21 +16,21 @@ You need to have [Morphe](https://morphe.software/) and click the button below �
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.1.0-dev.4](https://github.com/Juankyyy/morphe-patches/releases/tag/v1.1.0-dev.4)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
+> **[v1.1.0-dev.5](https://github.com/Juankyyy/morphe-patches/releases/tag/v1.1.0-dev.5)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
 <details open>
 <summary>📦 WaterMinder&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
 <br>
 
 **🎯 Supported versions:**
 
-| 🧪&nbsp;5.10.10 |
+| 5.10.10 |
 | :---: |
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Remove license check](#remove-license-check) | Skips the Play license check so the app starts on installs outside Google Play. |  |
 | [Unlock Premium](#unlock-premium) | Unlocks all Premium features. |  |
-| [Update check off by default](#update-check-off-by-default) | Disables automatic update checks by default. Can still be enabled in Settings. |  |
+| [Update check off by default](#update-check-off-by-default) | Disables automatic update checks by default. Keep it off and update only via Morphe. |  |
 
 </details>
 
