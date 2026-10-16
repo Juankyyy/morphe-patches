@@ -53,6 +53,14 @@ You need to have [Morphe](https://morphe.software/) and click the button below �
 
 <!-- PATCHES_END -->
 
+## ❌ Failed patches
+
+Apps whose premium cannot be unlocked with Morphe patches, documented so the attempt is not repeated.
+
+| 📱&nbsp;App | 🔢&nbsp;Version | 💊&nbsp;Failed patch | 📅&nbsp;Last attempt | 📜&nbsp;Description |
+|----------|----------------|----------------|----------------|----------------|
+| BitePal (`com.pookies.food.ai`) | 2.34.0 | Unlock Premium | 2026-10-15 | Premium is verified server-side (own `billing.v1.BillingService` backend + Play purchase validation) with the gating logic compiled into Dart native code, out of reach of DEX patches. Forcing BillingClient getters and faking `queryPurchasesAsync` had no effect: banner and locks remained. Google login also breaks on patched builds due to signature mismatch. |
+
 ### 🛠️ Building locally
 
 - Run `./gradlew buildAndroid`
