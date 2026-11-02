@@ -1,3 +1,9 @@
+## [1.3.0-dev.1](https://github.com/Juankyyy/morphe-patches/compare/v1.2.0...v1.3.0-dev.1) (2026-11-02)
+
+### ✨ New Features
+
+* add Amaze Go remove ads patch ([070aeee](https://github.com/Juankyyy/morphe-patches/commit/070aeeeb611186ce6ff07cc2364ed50dbf5dbf53))
+
 ## [1.2.0](https://github.com/Juankyyy/morphe-patches/compare/v1.1.0...v1.2.0) (2026-10-15)
 
 ### 🐛 Bug Fixes

@@ -16,7 +16,7 @@ You need to have [Morphe](https://morphe.software/) and click the button below �
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.2.0](https://github.com/Juankyyy/morphe-patches/releases/tag/v1.2.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;6 patches total
+> **[v1.3.0-dev.1](https://github.com/Juankyyy/morphe-patches/releases/tag/v1.3.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;7 patches total
 <details open>
 <summary>📦 Remote Mouse&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
 <br>
@@ -31,6 +31,21 @@ You need to have [Morphe](https://morphe.software/) and click the button below �
 | [Disable popups](#disable-popups) | Disables rate dialog, what's new dialog and auto update checks. |  |
 | [Remove ads](#remove-ads) | Disables banner and interstitial AdMob ads. |  |
 | [Unlock PRO](#unlock-pro) | Unlocks all PRO features. |  |
+
+</details>
+
+<details open>
+<summary>📦 Amaze GO!&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 1.37.0 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Remove ads](#remove-ads) | Blocks AppLovin MAX interstitials, app-open ads and banners. Rewarded ads grant their reward without playing the video. |  |
 
 </details>
 
